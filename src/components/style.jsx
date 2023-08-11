@@ -19,6 +19,14 @@ export const Main = styled.main`
         padding: 15px;
         border-radius: 5px;
         background-color: hsl(217, 19%, 24%);
+
+        @media(max-width: 414px){
+            width: 350px;
+        }
+            
+        @media(max-width: 320px){
+            width: 290px;
+        }
     }
 ` 
 export const Id = styled.p`
@@ -27,6 +35,10 @@ export const Id = styled.p`
     font-weight: 600;
     padding: 15px 0;
     letter-spacing: 4px;
+
+    @media(max-width: 320px){
+        font-size: 9px;
+    }
 `
 
 export const Advice = styled.p`
@@ -35,20 +47,32 @@ export const Advice = styled.p`
     font-weight: 800;
     color: hsl(193, 38%, 86%);
     padding: 15px 8px;
+
+    @media(max-width: 320px){
+        font-size: 17px;
+    }
 `
 
 export const Divider = styled.img`
     width: 400px;
-    padding: 15px 0;
+    padding: 25px 0;
+
+    @media(max-width: 414px){
+        width: 300px;
+    }
+    
+    @media(max-width: 320px){
+        width: 210px;
+    } 
 `
 
 export const Button = styled.button`
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: hsl(150, 100%, 66%);
-    transform: translateY(-50%);
+    transform: translateY(-45%);
 `
